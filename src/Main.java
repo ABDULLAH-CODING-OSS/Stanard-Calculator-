@@ -24,13 +24,15 @@ public class Main {
 
     static char operator;
     public static void main(String[] args) {
+
         frame=new JFrame("STANDARD CALCULATOR");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400,550);
         frame.setLocation(650,300); // OR WE CaN USE SETOUNDS
         frame.setLayout(null);
         frame.getContentPane().setBackground(new Color(44, 62, 80));
-
+        ImageIcon image = new ImageIcon("D:\\ALL DATA OF CODING\\JAVA\\Standard Calculator\\src\\calcuation.png");
+        frame.setIconImage(image.getImage());
 
         Font myFont = new Font("my font ",Font.BOLD,30);
         textField= new JTextField();
@@ -121,6 +123,7 @@ public class Main {
          decBtn.addActionListener(new ActionListener() {
              @Override
              public void actionPerformed(ActionEvent e) {
+
                  textField.setText(textField.getText()+".");
              }
          });
@@ -196,6 +199,7 @@ public class Main {
         clrBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 textField.setText("");
             }
         });
