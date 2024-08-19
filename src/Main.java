@@ -31,7 +31,7 @@ public class Main {
         frame.setLocation(650,300); // OR WE CaN USE SETOUNDS
         frame.setLayout(null);
         frame.getContentPane().setBackground(new Color(44, 62, 80));
-        ImageIcon image = new ImageIcon("D:\\ALL DATA OF CODING\\JAVA\\Standard Calculator\\src\\calcuation.png");
+        ImageIcon image = new ImageIcon("D:\\ALL DATA OF CODING\\JAVA\\Calculator I\\src\\calcuation.png");
         frame.setIconImage(image.getImage());
 
         Font myFont = new Font("my font ",Font.BOLD,30);
